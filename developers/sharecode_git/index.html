@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#757575">
+        <meta name="theme-color" content="#009688">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="orange">
   
     <svg class="md-svg">
       <defs>
@@ -382,13 +382,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gitgithub-cheat-sheet" class="md-nav__link">
-    Git/github Cheat Sheet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#sample-workflow" class="md-nav__link">
     Sample workflow
   </a>
@@ -509,13 +502,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gitgithub-cheat-sheet" class="md-nav__link">
-    Git/github Cheat Sheet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#sample-workflow" class="md-nav__link">
     Sample workflow
   </a>
@@ -581,10 +567,11 @@
                 
                 
                 <h1 id="collaborate-through-git">Collaborate through GIT<a class="headerlink" href="#collaborate-through-git" title="Permanent link">&para;</a></h1>
-<h2 id="gitgithub-cheat-sheet">Git/github Cheat Sheet<a class="headerlink" href="#gitgithub-cheat-sheet" title="Permanent link">&para;</a></h2>
 <div class="admonition tips">
-<p class="admonition-title">Tips</p>
-<p>If you need a quick reference of setting up and using git/github, find git cheat sheet <a href="https://github.com/newbooks/Develop-MCCE/raw/master/doc/gitcards.pdf">here</a>.</p>
+<p class="admonition-title">Tip: Git/github Cheat Sheet</p>
+<p>If you need a quick reference of setting up and using git/github, find <a href="https://github
+.com/newbooks/Develop-MCCE/raw/master/doc/gitcards.pdf"><span style="font-size: 
+large">git cheat sheet here</span></a>.</p>
 </div>
 <h2 id="sample-workflow">Sample workflow<a class="headerlink" href="#sample-workflow" title="Permanent link">&para;</a></h2>
 <p>To collaborate with others on this project, please fork from the <a href="https://github.com/GunnerLab/Develop-MCCE">GunnerLab Develop-MCCE repository</a>. The detailed steps are illustrated in the following example:</p>
@@ -635,14 +622,14 @@ pip install markdown-include
 
 
 <p>Go to wiki directory and run</p>
-<div class="codehilite"><pre><span></span><span class="n">mkdocs</span> <span class="n">serve</span>
+<div class="codehilite"><pre><span></span>mkdocs serve
 </pre></div>
 
 
 <p>Then point browser to URL http://localhost:8000 to monitor mkdocs page.</p>
 <p>If everything goes well, the documentation site should be up. Any edits under wiki will be reflected by the above page.</p>
 <p>When it is ready to deploy as a github page, run</p>
-<div class="codehilite"><pre><span></span><span class="n">mkdocs</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
+<div class="codehilite"><pre><span></span>mkdocs gh-deploy
 </pre></div>
 
 
@@ -670,10 +657,10 @@ git push --set-upstream origin issue#30
 <h3 id="clean-up">Clean up<a class="headerlink" href="#clean-up" title="Permanent link">&para;</a></h3>
 <p>Once the pull request is approved, the changes are compiled into the master branch of the main repository, and the branch issue#30 in your fork and local repository can be deleted.</p>
 <p>Under your local repo, </p>
-<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>        <span class="o">#</span> <span class="n">switch</span> <span class="k">from</span> <span class="n">branch</span> <span class="k">to</span> <span class="n">master</span>
-<span class="n">git</span> <span class="n">pull</span> <span class="n">upstream</span> <span class="n">master</span>   <span class="o">#</span> <span class="n">sync</span> <span class="k">from</span> <span class="n">upstream</span>
-<span class="n">git</span> <span class="n">branch</span> <span class="k">delete</span> <span class="n">issue</span><span class="o">#</span><span class="mi">30</span> <span class="o">#</span> <span class="k">delete</span> <span class="n">the</span> <span class="k">local</span> <span class="n">issue</span> <span class="n">branch</span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="c1">--delete issue#30 # delete remote issue branch</span>
+<div class="codehilite"><pre><span></span>git checkout master        # switch from branch to master
+git pull upstream master   # sync from upstream
+git branch delete issue#30 # delete the local issue branch
+git push origin --delete issue#30 # delete remote issue branch
 </pre></div>
 
 

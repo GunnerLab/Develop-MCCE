@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#757575">
+        <meta name="theme-color" content="#009688">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="orange">
   
     <svg class="md-svg">
       <defs>
@@ -424,6 +424,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-and-editing-documentation" class="md-nav__link">
+    Writing and editing documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-site" class="md-nav__link">
+    Deploy the site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-languange-references" class="md-nav__link">
+    Markdown languange references
+  </a>
+  
+</li>
+      
       
       
       
@@ -467,6 +488,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#writing-and-editing-documentation" class="md-nav__link">
+    Writing and editing documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-site" class="md-nav__link">
+    Deploy the site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-languange-references" class="md-nav__link">
+    Markdown languange references
+  </a>
+  
+</li>
+      
       
       
       
@@ -485,9 +527,47 @@
                 
                 
                 <h1 id="how-to-write-documentation">How to write documentation<a class="headerlink" href="#how-to-write-documentation" title="Permanent link">&para;</a></h1>
-<p>This documentation is written in mkdocs, which uses markdown language and publishes on github pages.</p>
+<p>This documentation is written in mkdocs, which uses markdown language and publishes on <a href="https://gunnerlab.github.io/Develop-MCCE/">github pages</a>.</p>
 <h2 id="installation-of-mkdocs">Installation of Mkdocs<a class="headerlink" href="#installation-of-mkdocs" title="Permanent link">&para;</a></h2>
-<p>Suppose you already have conda/miniconda and pip installed. </p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+pip install --upgrade pip
+pip install bs4
+pip install unicode
+pip install mkdocs
+pip install mkdocs-material
+pip install pymdown-extensions
+pip install markdown-blockdiag
+pip install markdown-include
+</pre></div>
+
+
+<p>This will install mkdocs, theme, and necessary plugins for documentation of this project.</p>
+<h2 id="writing-and-editing-documentation">Writing and editing documentation<a class="headerlink" href="#writing-and-editing-documentation" title="Permanent link">&para;</a></h2>
+<p>All documentation files reside under folder wiki/</p>
+<ul>
+<li><code>mkdocs.yml</code> : configuration file, also defines the menu</li>
+<li><code>docs/users/</code> : location of documentation files for users</li>
+<li><code>docs/developers/</code> : location of documentation files for developers  </li>
+<li><code>site/</code> : site web pages published by command <code>mkdocs gh-deploy</code></li>
+</ul>
+<p>Under wiki/ directory, run </p>
+<div class="codehilite"><pre><span></span>mkdocs serve
+</pre></div>
+
+
+<p>will bring up a web service, and point browser to <a href="http://localhost:8000">http://localhost:8000</a> to enable viewing 
+and debugging the documentation.</p>
+<h2 id="deploy-the-site">Deploy the site<a class="headerlink" href="#deploy-the-site" title="Permanent link">&para;</a></h2>
+<p>To deploy site, you can</p>
+<ul>
+<li>create a pull request so that the GunnerLab repo administrator can merge and deploy for you.</li>
+</ul>
+<p>or</p>
+<ul>
+<li>deploy directly by running <code>gh-deply</code> under directory wiki/. You need GunnerLab repo member permission to do 
+  this.</li>
+</ul>
+<h2 id="markdown-languange-references">Markdown languange references<a class="headerlink" href="#markdown-languange-references" title="Permanent link">&para;</a></h2>
                 
                   
                 
