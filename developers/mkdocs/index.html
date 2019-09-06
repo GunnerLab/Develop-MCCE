@@ -425,15 +425,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-and-editing-documentation" class="md-nav__link">
-    Writing and editing documentation
+  <a href="#writing-and-editing" class="md-nav__link">
+    Writing and editing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploy-the-site" class="md-nav__link">
-    Deploy the site
+  <a href="#deploying" class="md-nav__link">
+    Deploying
   </a>
   
 </li>
@@ -489,15 +489,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-and-editing-documentation" class="md-nav__link">
-    Writing and editing documentation
+  <a href="#writing-and-editing" class="md-nav__link">
+    Writing and editing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploy-the-site" class="md-nav__link">
-    Deploy the site
+  <a href="#deploying" class="md-nav__link">
+    Deploying
   </a>
   
 </li>
@@ -542,7 +542,7 @@ pip install markdown-include
 
 
 <p>This will install mkdocs, theme, and necessary plugins for documentation of this project.</p>
-<h2 id="writing-and-editing-documentation">Writing and editing documentation<a class="headerlink" href="#writing-and-editing-documentation" title="Permanent link">&para;</a></h2>
+<h2 id="writing-and-editing">Writing and editing<a class="headerlink" href="#writing-and-editing" title="Permanent link">&para;</a></h2>
 <p>All documentation files reside under folder wiki/</p>
 <ul>
 <li><code>mkdocs.yml</code> : configuration file, also defines the menu</li>
@@ -557,17 +557,26 @@ pip install markdown-include
 
 <p>will bring up a web service, and point browser to <a href="http://localhost:8000">http://localhost:8000</a> to enable viewing 
 and debugging the documentation.</p>
-<h2 id="deploy-the-site">Deploy the site<a class="headerlink" href="#deploy-the-site" title="Permanent link">&para;</a></h2>
+<h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
 <p>To deploy site, you can</p>
 <ul>
 <li>create a pull request so that the GunnerLab repo administrator can merge and deploy for you.</li>
 </ul>
 <p>or</p>
 <ul>
-<li>deploy directly by running <code>gh-deply</code> under directory wiki/. You need GunnerLab repo member permission to do 
+<li>deploy directly by running <code>gh-deploy</code> under directory wiki/. You need GunnerLab repo member permission to do 
   this.</li>
 </ul>
+<p>If <code>gh-deploy</code> reports conflict in special branch gh-pages, use "--force" switch to overwrite:</p>
+<div class="codehilite"><pre><span></span>mkdocs --force gh-deploy
+</pre></div>
+
+
+<p>The published site is on: <a href="https://gunnerlab.github.io/Develop-MCCE/">https://gunnerlab.github.io/Develop-MCCE/</a>.</p>
 <h2 id="markdown-languange-references">Markdown languange references<a class="headerlink" href="#markdown-languange-references" title="Permanent link">&para;</a></h2>
+<p><strong>Basic syntax:</strong> <a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a></p>
+<p><strong>More on syntax:</strong> <a href="https://alinex.gitlab.io/env/mkdocs/">https://alinex.gitlab.io/env/mkdocs/</a></p>
+<p><strong>Diagram:</strong> <a href="http://blockdiag.com/en/blockdiag/">http://blockdiag.com/en/blockdiag/</a></p>
                 
                   
                 
