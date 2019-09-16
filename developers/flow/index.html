@@ -374,10 +374,34 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../pymccelib.md" title="Pymccelib" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
       Pymccelib
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Pymccelib
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pymccelib_prmtpl/" title="Reading Parameters" class="md-nav__link">
+      Reading Parameters
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -511,7 +535,6 @@
 <span class="n">C6</span> <span class="o">--&gt;</span><span class="n">C8</span><span class="p">(</span><span class="n">head1</span><span class="p">.</span><span class="n">lst</span><span class="p">)</span>
 </pre></div>
 
-
 <h3 id="step-2-make-residue-conformers">Step 2: Make residue conformers<a class="headerlink" href="#step-2-make-residue-conformers" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="n">graph</span> <span class="n">TD</span>
 <span class="n">A1</span><span class="p">(</span><span class="n">run</span><span class="p">.</span><span class="n">prm</span><span class="p">)</span><span class="o">--&gt;</span><span class="n">B1</span><span class="p">((</span><span class="n">read</span> <span class="n">prm</span><span class="p">))</span>
@@ -534,7 +557,6 @@
 <span class="n">C4</span> <span class="o">--&gt;</span><span class="n">C6</span><span class="p">(</span><span class="n">head2</span><span class="p">.</span><span class="n">lst</span><span class="p">)</span>
 </pre></div>
 
-
 <h3 id="step-3-compute-energy-table">Step 3. Compute energy table<a class="headerlink" href="#step-3-compute-energy-table" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="n">graph</span> <span class="n">TD</span>
 <span class="n">A1</span><span class="p">(</span><span class="n">run</span><span class="p">.</span><span class="n">prm</span><span class="p">)</span><span class="o">--&gt;</span><span class="n">B1</span><span class="p">((</span><span class="n">read</span> <span class="n">prm</span><span class="p">))</span>
@@ -554,7 +576,6 @@
 <span class="n">C4</span><span class="o">--&gt;</span><span class="n">C5</span><span class="p">(</span><span class="n">energies</span><span class="cm">/*.opp)</span>
 <span class="cm">C4--&gt;C6(head3.lst)</span>
 </pre></div>
-
 
 <h3 id="step-4-monte-carlo-sampling-accessible-states">Step 4. Monte Carlo sampling: accessible states<a class="headerlink" href="#step-4-monte-carlo-sampling-accessible-states" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="n">graph</span> <span class="n">TB</span>
@@ -613,6 +634,8 @@
       <script src="../../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>

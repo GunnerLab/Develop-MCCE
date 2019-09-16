@@ -378,10 +378,34 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../pymccelib.md" title="Pymccelib" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
       Pymccelib
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Pymccelib
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pymccelib_prmtpl/" title="Reading Parameters" class="md-nav__link">
+      Reading Parameters
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -540,22 +564,19 @@ pip install markdown-blockdiag
 pip install markdown-include
 </pre></div>
 
-
 <p>This will install mkdocs, theme, and necessary plugins for documentation of this project.</p>
 <h2 id="writing-and-editing">Writing and editing<a class="headerlink" href="#writing-and-editing" title="Permanent link">&para;</a></h2>
 <p>All documentation files reside under folder wiki/</p>
 <ul>
-<li><code>mkdocs.yml</code> : configuration file, also defines the menu</li>
-<li><code>docs/users/</code> : location of documentation files for users</li>
-<li><code>docs/developers/</code> : location of documentation files for developers  </li>
-<li><code>site/</code> : site web pages published by command <code>mkdocs gh-deploy</code></li>
+<li><code class="codehilite">mkdocs.yml</code> : configuration file, also defines the menu</li>
+<li><code class="codehilite">docs/users/</code> : location of documentation files for users</li>
+<li><code class="codehilite">docs/developers/</code> : location of documentation files for developers  </li>
+<li><code class="codehilite">site/</code> : site web pages published by command <code class="codehilite">mkdocs gh-deploy</code></li>
 </ul>
-<p>Under wiki/ directory, run </p>
+<p>Under wiki/ directory, run 
 <div class="codehilite"><pre><span></span>mkdocs serve
 </pre></div>
-
-
-<p>will bring up a web service, and point browser to <a href="http://localhost:8000">http://localhost:8000</a> to enable viewing 
+will bring up a web service, and point browser to <a href="http://localhost:8000">http://localhost:8000</a> to enable viewing 
 and debugging the documentation.</p>
 <h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
 <p>To deploy site, you can</p>
@@ -564,19 +585,18 @@ and debugging the documentation.</p>
 </ul>
 <p>or</p>
 <ul>
-<li>deploy directly by running <code>gh-deploy</code> under directory wiki/. You need GunnerLab repo member permission to do 
+<li>deploy directly by running <code class="codehilite">gh-deploy</code> under directory wiki/. You need GunnerLab repo member permission to do 
   this.</li>
 </ul>
-<p>If <code>gh-deploy</code> reports conflict in special branch gh-pages, use "--force" switch to overwrite:</p>
-<div class="codehilite"><pre><span></span>mkdocs --force gh-deploy
-</pre></div>
-
-
+<p>If <code class="codehilite">gh-deploy</code> reports conflict in special branch gh-pages, use "--force" switch to overwrite:
+<div class="codehilite"><pre><span></span>mkdocs gh-deploy --force
+</pre></div></p>
 <p>The published site is on: <a href="https://gunnerlab.github.io/Develop-MCCE/">https://gunnerlab.github.io/Develop-MCCE/</a>.</p>
 <h2 id="markdown-languange-references">Markdown languange references<a class="headerlink" href="#markdown-languange-references" title="Permanent link">&para;</a></h2>
 <p><strong>Basic syntax:</strong> <a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a></p>
 <p><strong>More on syntax:</strong> <a href="https://alinex.gitlab.io/env/mkdocs/">https://alinex.gitlab.io/env/mkdocs/</a></p>
 <p><strong>Diagram:</strong> <a href="http://blockdiag.com/en/blockdiag/">http://blockdiag.com/en/blockdiag/</a></p>
+<p><strong>PyDown:</strong> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/">https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/</a></p>
                 
                   
                 
@@ -597,7 +617,7 @@ and debugging the documentation.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../structure/" title="Program Structure" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../pymccelib_prmtpl/" title="Reading Parameters" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -606,7 +626,7 @@ and debugging the documentation.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Program Structure
+                Reading Parameters
               </span>
             </div>
           </a>
@@ -635,6 +655,8 @@ and debugging the documentation.</p>
       <script src="../../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>

@@ -470,10 +470,34 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../pymccelib.md" title="Pymccelib" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
       Pymccelib
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Pymccelib
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pymccelib_prmtpl/" title="Reading Parameters" class="md-nav__link">
+      Reading Parameters
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -597,11 +621,11 @@
 <p class="admonition-title">Tip</p>
 <ul>
 <li>Use Python 3</li>
-<li>Read PEP 8 (https://www.python.org/dev/peps/pep-0008/) </li>
-<li>Read PEP 20 (https://www.python.org/dev/peps/pep-0020/) </li>
+<li>Read PEP 8 (<a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a>) </li>
+<li>Read PEP 20 (<a href="https://www.python.org/dev/peps/pep-0020/">https://www.python.org/dev/peps/pep-0020/</a>) </li>
 <li>Put constants, data structure and reusable functions in pymccelib.py so that the main program keeps focus on program flow.</li>
-<li>Put all python scripts in <code>bin/</code></li>
-<li>Put all program documentation in markdown language in <code>/wiki/docs/</code></li>
+<li>Put all python scripts in <code class="codehilite">bin/</code></li>
+<li>Put all program documentation in markdown language in <code class="codehilite">/wiki/docs/</code></li>
 </ul>
 </div>
 <h2 id="print-and-log-messages">Print and log messages<a class="headerlink" href="#print-and-log-messages" title="Permanent link">&para;</a></h2>
@@ -659,7 +683,6 @@
     <span class="n">welcome</span><span class="p">()</span>
 </pre></div>
 
-
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>The logging.basicConfig() can only be declared only once, and before any logging messages!</p>
@@ -667,11 +690,11 @@
 <h2 id="python-tutorials-and-books">Python tutorials and books<a class="headerlink" href="#python-tutorials-and-books" title="Permanent link">&para;</a></h2>
 <h3 id="beginner-books">Beginner books<a class="headerlink" href="#beginner-books" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Python Crash Course by Eric Matthes, 2nd Edition. Find on <a href="https://www.amazon.com/Python-Crash-Course-Eric-Matthes-ebook/dp/B07J4521M3/ref=sr_1_3?crid=9G2SVBJOI5HY&amp;keywords=python+crash+course&amp;qid=1559148694&amp;s=digital-text&amp;sprefix=Python+Crash%2Cdigital-text%2C117&amp;sr=1-3">Amazon</a>.</li>
+<li>Python Crash Course by Eric Matthes, 2<sup>nd</sup> Edition. Find on <a href="https://www.amazon.com/Python-Crash-Course-Eric-Matthes-ebook/dp/B07J4521M3/ref=sr_1_3?crid=9G2SVBJOI5HY&amp;keywords=python+crash+course&amp;qid=1559148694&amp;s=digital-text&amp;sprefix=Python+Crash%2Cdigital-text%2C117&amp;sr=1-3">Amazon</a>.</li>
 </ul>
 <h3 id="comprehensive-reference">Comprehensive reference<a class="headerlink" href="#comprehensive-reference" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Programming Python by Mark Lutz, 4th Edition. Find it on <a href="https://www.amazon.com/Programming-Python-Powerful-Object-Oriented-dp-0596158106/dp/0596158106/ref=mt_paperback?_encoding=UTF8&amp;me=&amp;qid=1559148286">Amazon</a>.</li>
+<li>Programming Python by Mark Lutz, 4<sup>th</sup> Edition. Find it on <a href="https://www.amazon.com/Programming-Python-Powerful-Object-Oriented-dp-0596158106/dp/0596158106/ref=mt_paperback?_encoding=UTF8&amp;me=&amp;qid=1559148286">Amazon</a>.</li>
 </ul>
 <h3 id="advanced-books">Advanced books<a class="headerlink" href="#advanced-books" title="Permanent link">&para;</a></h3>
 <ul>
@@ -749,6 +772,8 @@
       <script src="../../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>
